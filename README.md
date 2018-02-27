@@ -1,4 +1,4 @@
-# react-ts
+# router-4.2 test
 A simple example on React router 4.2 features
 
 ## Steps to run
