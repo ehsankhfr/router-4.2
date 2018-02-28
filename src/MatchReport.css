@@ -1,0 +1,11 @@
+.match-report {
+	background-color: #ffff33;
+}
+.match-report table, th, td {
+   border: 1px solid black;
+}
+
+.match-report__title {
+	/*float: left;*/
+	text-align: left;
+}

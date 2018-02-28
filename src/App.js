@@ -36,7 +36,8 @@ class App extends Component {
         </p>
         <Switch>
           <Route exact path='/' component={Home}/>
-          <Route path='/roster' render={(props) => <Roster {...props} Age={App.getRandomInt(1,80)}/>}/>
+          <Route exact path='/roster' render={(props) => <Roster {...props} Age={App.getRandomInt(1,80)}/>}/>
+          <Route render={()=>(<div>NOT FOUND :(</div>)}/>
         </Switch>
       </div>
     );
