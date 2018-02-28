@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
 
-class Roster extends Component {
-  render() {
-    return (
-      <div>
-        This is Roster!
-      </div>
-    );
-  }
-}
+const Roster = (props) =>(
+  <div>
+    This is Roster! My age is {props.Age} :)
+  </div>
+);
 
 export default Roster;

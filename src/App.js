@@ -13,6 +13,10 @@ import {
 } from 'react-router-dom';
 
 class App extends Component {
+  static getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
   render() {
     return (
       <div className="App">
@@ -32,8 +36,7 @@ class App extends Component {
         </p>
         <Switch>
           <Route exact path='/' component={Home}/>
-          {/* both /roster and /roster/:number begin with /roster */}
-          <Route path='/roster' component={Roster}/>
+          <Route path='/roster' render={(props) => <Roster {...props} Age={App.getRandomInt(1,80)}/>}/>
         </Switch>
       </div>
     );
